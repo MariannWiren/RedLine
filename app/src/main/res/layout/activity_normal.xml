@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_style"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/numberGuess"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/btnGuess"
+        android:layout_toLeftOf="@+id/btnAvsluta"
+        android:layout_toStartOf="@+id/btnAvsluta" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gissa"
+        android:id="@+id/btnGuess"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/numberGuess"
+        android:layout_toEndOf="@+id/numberGuess" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_style"
+        android:text="För lågt"
+        android:id="@+id/textLow"
+        android:layout_marginTop="52dp"
+        android:minHeight="50dp"
+        android:layout_below="@+id/numberGuess"
+        android:layout_alignRight="@+id/numberGuess"
+        android:layout_alignEnd="@+id/numberGuess"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_style"
+        android:text="För högt"
+        android:id="@+id/textHigh"
+        android:layout_alignTop="@+id/textLow"
+        android:minWidth="70dp"
+        android:minHeight="50dp"
+        android:layout_alignRight="@+id/btnGuess"
+        android:layout_alignEnd="@+id/btnGuess"
+        android:layout_toEndOf="@+id/textLow"
+        android:layout_toRightOf="@+id/textLow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_style"
+        android:text="High"
+        android:id="@+id/numberHigh"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/numberLow"
+        android:layout_alignBottom="@+id/numberLow"
+        android:layout_toRightOf="@+id/textLow"
+        android:layout_toEndOf="@+id/textLow" />"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_style"
+        android:text="Low"
+        android:id="@+id/numberLow"
+        android:layout_alignRight="@+id/textLow"
+        android:layout_alignEnd="@+id/textLow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btnAvsluta"
+        android:minHeight="240dp"
+        android:layout_below="@+id/textLow" />
+
+
+
+
+</RelativeLayout>
